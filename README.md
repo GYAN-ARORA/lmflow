@@ -9,7 +9,7 @@
 
 The motivation to build LMFlow (language-model-flow) is to have a simpler and transparent framework to build LLM based agentic applications, opposed to popular libraries like langchain, llamaindex, etc, which are adding overkill features and complications to support rare use-cases. I am building LMFlow because it was hard to understand what's going on under the hood with the other frameworks and they did not give me the confidence to build production ready applications, with LLMs already being a black box. 
 
-LMFlow is production safe. The core focus here is to keep it light weight and transparent that using LMFlow actually increases your understanding of LLM systems rather than decreasing it.
+LMFlow is production safe. The core focus here is to keep it light weight and transparent so that using LMFlow actually increases your understanding of LLM systems rather than decreasing it.
 
 ## Features
 - Use any LLM API or local model easilly.
@@ -19,7 +19,7 @@ LMFlow is production safe. The core focus here is to keep it light weight and tr
 
 ## Usage
 1. Set up and load key
-2. Create your own ChatLM class and instance
+2. Create your own `ChatLM` class and instance
 3. Explore some usefull functions
 4. Tools with human in the loop
 5. Agents and Multi-agents
@@ -214,6 +214,9 @@ print(supervisor.reply('now list files'))
 ```
 ```python
 print(supervisor.reply("what is the size of output_28-10-2024.csv in this directory"))
+```
+```console
+>> Transfering conversation to agent: "file_operator_agent"
 ```
 ```
 >> The size of output_28-10-2024.csv is 0 bytes.
