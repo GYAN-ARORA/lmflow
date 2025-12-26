@@ -3,7 +3,6 @@ rough/
 output/
 .vscode/
 .DS_Store
-lmflow/closed_source.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
